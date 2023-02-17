@@ -15,7 +15,7 @@ public class Main {
         int sum3 = pensioner.pricepensioner();
 
         // Сумма
-        System.out.println(sum1 + sum2 + sum3);
+        System.out.println("Общая сумма билетов: " + sum1 + sum2 + sum3);
 
     }
 }
