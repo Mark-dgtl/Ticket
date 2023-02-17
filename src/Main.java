@@ -8,14 +8,15 @@ public class Main {
 
         // стоимость детских билетов
         Ticket child = new Ticket(70,50,11);
-        int sum2 = child.pricechild();
+        float sum2 = child.pricechild();
 
         // стоимость пенсионерских билетов
         Ticket pensioner = new Ticket(70,30,5);
-        int sum3 = pensioner.pricepensioner();
+        float sum3 = pensioner.pricepensioner();
 
         // Сумма
-        System.out.println("Общая сумма билетов: " + sum1 + sum2 + sum3);
+        System.out.println("Общая сумма билетов: ");
+        System.out.println(sum1 + sum2 + sum3);
 
     }
 }

@@ -1,6 +1,6 @@
 public class Ticket {
     int price;  // стоимость взрослого билета
-    int discount;  // скидка
+    float discount;  // скидка
     int amt;    // количество билетов
 
 
@@ -11,14 +11,14 @@ public class Ticket {
     }
 
     // стоимость детских билетов
-    int pricechild (){
-        int value = price * discount / 100 * amt;
+    float pricechild (){
+        float value = price * (1 - discount / 100) * amt;
         return value;
     }
 
     // стоимость пенсионерских билетов
-    int pricepensioner (){
-        int value = price * discount / 100 * amt;
+    float pricepensioner (){
+        float value = price * (1-discount / 100) * amt;
         return value;
     }
 
